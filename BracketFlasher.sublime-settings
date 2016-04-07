@@ -1,0 +1,16 @@
+{
+    // Restart Sublime Text to pick up changes to these settings.
+
+    // Scope used to flash a matching bracket section.
+    "match_scope": "comment",
+
+    // Scope used to flash an unmatched bracket.
+    "error_scope": "invalid.illegal",
+
+    // How far to keep looking for a match - number of characters.
+    // Reduce this to improve responsiveness.
+    "backtrack_limit": 100000,
+
+    // How long to flash the screen for in ms.
+    "flash_time": 200,
+}

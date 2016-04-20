@@ -13,4 +13,53 @@
 
     // How long to flash the screen for in ms.
     "flash_time": 200,
+
+    // Brackets to match with the context to apply.
+    "brackets": [
+        // General case - source files, but ignore comments and strings.
+        {
+            "bracket": ")",
+            "partner": "(",
+            "include": [],
+            "exclude": ["comment", "string"]
+        },
+        {
+            "bracket": "]",
+            "partner": "[",
+            "include": [],
+            "exclude": ["comment", "string"]
+        },
+        {
+            "bracket": "}",
+            "partner": "{",
+            "include": [],
+            "exclude": ["comment", "string"]
+        },
+        // Now handle brackets within comments.
+        {
+            "bracket": ")",
+            "partner": "(",
+            "include": ["comment"],
+            "exclude": ["string"]
+        },
+        {
+            "bracket": "]",
+            "partner": "[",
+            "include": ["comment"],
+            "exclude": ["string"]
+        },
+        {
+            "bracket": "}",
+            "partner": "{",
+            "include": ["comment"],
+            "exclude": ["string"]
+        },
+        // Special case for HTML tags.
+        {
+            "bracket": ">",
+            "partner": "<",
+            "include": ["html"],
+            "exclude": ["comment", "string"]
+        }
+    ]
 }

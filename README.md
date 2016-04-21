@@ -13,7 +13,9 @@ a warning to make it clear you've made a mistake.
 
 ## Installation
 Install from Package Control in the usual way.
+The function will be automatically enabled once installation is complete.
 
 ## Settings
 See the default settings (Preferences->Package Settings->BracketFlasher->Settings - Default) for the list of settings.
 You can adjust how and how long the screen flashes, and the sets of bracket pairs that are handled.
+You must restart Sublime Text to pick up changes to the settings.

@@ -12,7 +12,7 @@
                 "children":
                 [
                     {
-                        "caption": "Bracket Flasher",
+                        "caption": "BracketFlasher",
                         "children":
                         [
                             {
@@ -24,7 +24,7 @@
                                 "command": "open_file",
                                 "args": {"file": "${packages}/User/BracketFlasher.sublime-settings"},
                                 "caption": "Settings – User"
-                            },
+                            }
                         ]
                     }
                 ]

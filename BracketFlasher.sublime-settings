@@ -15,6 +15,10 @@
     "flash_time": 200,
 
     // Brackets to match with the context to apply.
+    // Include specifies scopes that must be present at the point of the
+    // bracket to invoke the rule.
+    // Exclude specifies scopes that must not be present to invoke the rule.
+    // The list is traversed in order so more general rules must come first.
     "brackets": [
         // General case - source files, but ignore comments and strings.
         {

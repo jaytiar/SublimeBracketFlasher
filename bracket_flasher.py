@@ -15,6 +15,10 @@ class BracketFlasher(sublime_plugin.EventListener):
         """Called whenever a view is modified."""
         # This is too slow if we use the _async version.
 
+        if view.settings().get('is_widget', False):
+            # Don't render in widget views
+            return
+
         # Get various settings.
         global settings
         match_style = settings.get("match_scope", "comment")
